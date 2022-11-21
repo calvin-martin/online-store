@@ -26,8 +26,6 @@ export class AuthController {
         newUser.setEmail(body.email);
         newUser.setRole('client');
         newUser.setBalance(1000);
-
-        console.log(newUser);
         await this.usersService.createOrUpdate(newUser);
 
     }
